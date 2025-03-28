@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Art Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Virtual Art Gallery</h1>
+  </header>
+
+  <main>
+    <!-- Artworks -->
+    <div class="gallery">
+      <div class="artwork">
+        <img src="../virtual gallery/images/art1.jpg" alt="Artwork 1" >
+        <p>sun rising</p>
+      </div>
+      <div class="artwork">
+        <img src="../virtual gallery/images/art2.jpg" alt="Artwork 2">
+        <p>sunset</p>
+      </div>
+      <div class="artwork">
+        <img src="../virtual gallery/images/art3.jpg" alt="Artwork 3">
+        <p>shining mountains</p>
+      </div>
+      <div class="artwork">
+        <img src="../virtual gallery/images/art4.jpg" alt="Artwork 1" >
+        <p>sunshine</p>
+      </div>
+      <div class="artwork">
+        <img src="../virtual gallery/images/art5.jpg" alt="Artwork 2">
+        <p>Nature photography</p>
+      </div>
+      <div class="artwork">
+        <img src="../virtual gallery/images/art6.jpg" alt="Artwork 3">
+        <p>Shining day</p>
+      </div>
+      <div class="artwork">
+        <img src="../virtual gallery/images/art7.jpg" alt="Artwork 3">
+        <p>Nature</p>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="controls">
+      <button id="prev">Previous</button>
+      <button id="next">Next</button>
+      <button id="playPause">Pause</button>
+    </div>
+
+    <!-- Thumbnail Navigation -->
+    <div class="thumbnail-container">
+      <img class="thumbnail" src="../virtual gallery/images/art1.jpg" alt="Thumbnail 1">
+      <img class="thumbnail" src="../virtual gallery/images/art2.jpg" alt="Thumbnail 2">
+      <img class="thumbnail" src="../virtual gallery/images/art3.jpg" alt="Thumbnail 3">
+      <img class="thumbnail" src="../virtual gallery/images/art4.jpg" alt="Thumbnail 4">
+      <img class="thumbnail" src="../virtual gallery/images/art5.jpg" alt="Thumbnail 5">
+      <img class="thumbnail" src="../virtual gallery/images/art6.jpg" alt="Thumbnail 6">
+      <img class="thumbnail" src="../virtual gallery/images/art7.jpg" alt="Thumbnail 7">
+
+    </div>
+
+    <!-- Additional Controls -->
+    <div class="extra-controls">
+      <button id="fullscreen">Enter Fullscreen</button>
+      <button id="toggleDescriptions">Hide Descriptions</button>
+    </div>
+  </main>
+
+  <!-- Modal for Zoom -->
+  <div id="artworkModal" class="modal">
+    <span id="closeModal">&times;</span>
+    <img id="modalImage" alt="Modal Artwork">
+    <div id="modalCaption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
